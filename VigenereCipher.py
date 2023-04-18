@@ -53,3 +53,11 @@ if __name__ == "__main__":
     
     cipher_text = generate_vigenere_cipher(message, cipher_key)
     encrypt_message = encryption_message(message, cipher_text)
+    
+print("")
+print("-" * 70)
+print("\033[1;3;36mProcessing........\033[0m".center(80))
+print("-" * 70)
+
+# Print the output
+print("\n\033[1;32mCiphertext:\033[0m", encrypt_message.upper())
