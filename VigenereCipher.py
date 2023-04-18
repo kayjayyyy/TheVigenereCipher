@@ -61,3 +61,10 @@ print("-" * 70)
 
 # Print the output
 print("\n\033[1;32mCiphertext:\033[0m", encrypt_message.upper())
+
+# Outro and border line
+print("\n")
+print("\033[3mThank you for supporting our program!".center(70))
+print("")
+print("\033[35m※ \033[0m" * 35)
+print("")
