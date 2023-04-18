@@ -43,3 +43,13 @@ def encryption_message(message, key):
         text += ord("a")
         encrypt_message.append(chr(text))
     return("" . join(encrypt_message))
+
+# Ask the users input (message and key)
+if __name__ == "__main__":
+    message = input("\n\033[3;35mPlease input the message you want to encrypt: \033[0m")
+    message = upper_and_remove_space(message)
+    cipher_key = input("\n\033[3;35mWhat is your key? \033[0m")
+    cipher_key = upper_and_remove_space(cipher_key)
+    
+    cipher_text = generate_vigenere_cipher(message, cipher_key)
+    encrypt_message = encryption_message(message, cipher_text)
