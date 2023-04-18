@@ -27,3 +27,19 @@ def upper_and_remove_space(mess):
     return mess
 
 # Generate and define the Vigenère Cipher program
+def generate_vigenere_cipher(message, key):
+    key = list(key)
+    if len(message) == len(key):
+        return(key)
+    else:
+        for i in range(len(message) - len(key)):
+            key.append(key[i % len(key)])
+    return("" . join(key))
+
+def encryption_message(message, key):
+    encrypt_message = []
+    for i in range(len(message)):
+        text = (ord(message[i]) + ord(key[i])) % 26
+        text += ord("a")
+        encrypt_message.append(chr(text))
+    return("" . join(encrypt_message))
