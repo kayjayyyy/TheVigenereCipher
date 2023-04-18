@@ -16,3 +16,12 @@ print("")
 print("\033[36m Let's get started! \033[0m".center(78, "~"))
 
 # Remove space and uppercase only
+def upper_and_remove_space(mess):
+    if mess.isupper() == False or " " in mess:
+        print("\033[31mError: Not capitalize and/or has spaces.\033[0m")
+        mess = mess.upper()
+        for i in mess:
+            if " " in i:
+                mess = mess.replace(i, "")
+        print("\n\033[33mWe converted it for you:", mess + "\033[0m")
+    return mess
