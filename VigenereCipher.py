@@ -25,3 +25,5 @@ def upper_and_remove_space(mess):
                 mess = mess.replace(i, "")
         print("\n\033[33mWe converted it for you:", mess + "\033[0m")
     return mess
+
+# Generate and define the Vigenère Cipher program
